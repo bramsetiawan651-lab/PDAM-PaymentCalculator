@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.3.1.final using JasperReports Library version 6.3.1  -->
+<!-- 2025-10-14T14:11:37 -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="laptagihan" pageWidth="1000" pageHeight="842" columnWidth="960" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="be1cb56a-51cb-42f4-a4a6-55c9d2c70968">
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="conn_praktikum7"/>
+	<property name="com.jaspersoft.studio.unit." value="pixel"/>
+	<queryString language="SQL">
+		<![CDATA[select * from tagihan2410031]]>
+	</queryString>
+	<field name="notagihan2410031" class="java.lang.String"/>
+	<field name="namapelanggan2410031" class="java.lang.String"/>
+	<field name="kodetarif2410031" class="java.lang.String"/>
+	<field name="meterlalu2410031" class="java.lang.Integer"/>
+	<field name="metersekarang2410031" class="java.lang.Integer"/>
+	<field name="pemakaian2410031" class="java.lang.Integer"/>
+	<field name="diskon2410031" class="java.lang.Double"/>
+	<field name="totalbayar2410031" class="java.lang.Double"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<staticText>
+				<reportElement x="371" y="21" width="220" height="37" uuid="9f9eda7e-0226-46ba-9622-0ce3eb38278a"/>
+				<textElement textAlignment="Center">
+					<font size="22" isBold="true"/>
+				</textElement>
+				<text><![CDATA[PDAM PADANG]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="44" splitType="Stretch">
+			<staticText>
+				<reportElement x="370" y="7" width="243" height="30" uuid="caee2994-1059-4cf2-b6d7-d8d10c734788"/>
+				<textElement>
+					<font size="18" isBold="true"/>
+				</textElement>
+				<text><![CDATA[LAPORAN TAGIHAN PDAM]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="61" splitType="Stretch">
+			<rectangle>
+				<reportElement x="-20" y="0" width="999" height="61" uuid="02930c2c-5a35-45d7-b9fe-5736894dc1bd"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="0" y="13" width="100" height="30" uuid="9e222413-6ea4-44b3-a023-63f61852c71c"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[NO TAGIHAN]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="120" y="10" width="100" height="51" uuid="99b5335c-2479-48a0-851e-2a73e692ece6"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[NAMA PELANGGAN]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="240" y="13" width="100" height="30" uuid="f659f7f8-9ed0-4731-b8cb-f2ceace39962"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[KODE TARIF]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="360" y="13" width="100" height="30" uuid="0f4b4a0f-5ef5-48e8-89a6-ee45cabcf83e"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[METER LALU]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="480" y="10" width="100" height="51" uuid="7c4352df-9958-45a0-9b23-25c9e38325d9"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[METER SEKARANG]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="600" y="13" width="100" height="30" uuid="fbeb08ea-e2ab-4691-96ac-bc2fb4ef48aa"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[PEMAKAIAN]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="740" y="13" width="70" height="30" uuid="d6c8df33-9324-4289-95fb-5ce524a5c269"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[DISKON]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="850" y="13" width="100" height="30" uuid="d6007ce8-4db1-456e-929b-c42b230be43f"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[TOTAL BAYAR]]></text>
+			</staticText>
+			<line>
+				<reportElement x="110" y="0" width="1" height="61" uuid="50f12d6e-7818-484e-b47f-0d910c699cbc"/>
+			</line>
+			<line>
+				<reportElement x="230" y="0" width="1" height="61" uuid="b8305ede-00c6-4a06-bf4c-fa73149b618d"/>
+			</line>
+			<line>
+				<reportElement x="350" y="0" width="1" height="61" uuid="ab0e032b-6920-4d25-a5d6-4264f0fc70cd"/>
+			</line>
+			<line>
+				<reportElement x="470" y="0" width="1" height="61" uuid="73ce227d-a69c-4890-b8a3-0b93f7063e69"/>
+			</line>
+			<line>
+				<reportElement x="590" y="0" width="1" height="61" uuid="42465970-5972-4a42-9e4a-abfbc6164058"/>
+			</line>
+			<line>
+				<reportElement x="720" y="0" width="1" height="61" uuid="f3b50eba-46e2-4ddc-850f-c3d06ef62bcc"/>
+			</line>
+			<line>
+				<reportElement x="830" y="0" width="1" height="61" uuid="74f27b05-b10e-4d38-b0d7-cadf79ea74de"/>
+			</line>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="40" splitType="Stretch">
+			<rectangle>
+				<reportElement x="-20" y="0" width="999" height="40" uuid="a17d298b-bf8d-4472-9246-531a818d1a7c"/>
+			</rectangle>
+			<textField>
+				<reportElement x="0" y="10" width="100" height="30" uuid="4b332b17-2fb4-42af-b9b7-c2b9be1b8ee1"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{notagihan2410031}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="120" y="10" width="100" height="30" uuid="0ada77a5-f54c-4057-89b8-bd328dcc09bb"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{namapelanggan2410031}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="240" y="10" width="100" height="30" uuid="f9f052d3-790e-4412-83fd-838a277769b9"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{kodetarif2410031}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="360" y="10" width="100" height="30" uuid="892c5d9f-bb53-418e-bc85-2029f58643d9"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{meterlalu2410031}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="480" y="10" width="100" height="30" uuid="14932353-0962-40d8-9da1-1bc32ef10224"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{metersekarang2410031}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="601" y="10" width="100" height="30" uuid="99264cfd-4116-4705-ba72-8743598c708f"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{pemakaian2410031}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="730" y="10" width="80" height="30" uuid="aee6b712-67ed-4930-85ae-5705922ed318"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{diskon2410031}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="850" y="10" width="100" height="30" uuid="cc61b516-8806-4a9f-9830-9c065f089542"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{totalbayar2410031}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="110" y="0" width="1" height="40" uuid="35d41784-c0fe-4ea8-835b-9eb191950d61"/>
+			</line>
+			<line>
+				<reportElement x="230" y="0" width="1" height="40" uuid="940150a7-5b8a-4049-ac6c-4ad2912dcf19"/>
+			</line>
+			<line>
+				<reportElement x="350" y="0" width="1" height="40" uuid="786fc872-2e74-45a2-a317-f0e7bc4f81f1"/>
+			</line>
+			<line>
+				<reportElement x="470" y="0" width="1" height="40" uuid="bbbc3569-7cab-4b85-b0cc-c12160b538a7"/>
+			</line>
+			<line>
+				<reportElement x="590" y="0" width="1" height="40" uuid="03fcf9a5-b455-4f1d-9f81-98b7c6b48264"/>
+			</line>
+			<line>
+				<reportElement x="720" y="0" width="1" height="40" uuid="d27c2868-a11f-41bc-99be-4f2b8b6bf31b"/>
+			</line>
+			<line>
+				<reportElement x="830" y="0" width="1" height="40" uuid="03cd6d8a-276d-448a-bbf8-5eb528c337d1"/>
+			</line>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch">
+			<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.FreeLayout"/>
+		</band>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>
